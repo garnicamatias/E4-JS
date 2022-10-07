@@ -34,7 +34,15 @@ const requestPokemon = async (id) => {
 }
 
 const renderCard = async(data) => {
-    const {id, name, types, sprites :{ other : { dream_world : {front_default : pokemonImg}} }, weight, height} = data;
+    
+    let pokemonImg;
+    const {id, name, types, weight, height} = data;
+    
+    if(id >649){
+        pokemonImg = data.sprites.other.home.front_default;
+    } else{
+        pokemonImg= data.sprites.other.dream_world.front_default;
+    }
 
     let nameUpperCase = name[0].toUpperCase() + name.substring(1);
 

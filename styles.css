@@ -105,7 +105,7 @@ body{
 
 .nameContainer > p {
     font-weight: 600;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .imgContainer{
@@ -234,3 +234,10 @@ body{
     padding: 5px;
     border: 2px solid rgb(106, 134, 147);
 }
+
+
+@media screen and (max-width: 450px){
+    main{
+        width:95%;
+    }
+  }
