@@ -78,7 +78,15 @@ body{
     font-size: 20px;
     height: 40px;
     font-weight: 700;
+    transition: all 0.5s ease;
+    cursor: pointer;
 }
+
+#btnSubmit:hover{
+    background-color:rgb(171, 16, 47);
+    box-shadow: 1px 9px 17px 0px rgba(0, 0, 0, 0.7);
+}
+
 
 .cardContainer{
     background-color:rgba(248, 234, 220, 1) ;
