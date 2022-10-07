@@ -9,6 +9,7 @@ const renderPokemon = async (e) => {
 
         try {
             const dataPokemon = await requestPokemon(pokemonId);
+            clrScreen();
             renderCard(dataPokemon);
             
         } catch (error) {
@@ -33,16 +34,40 @@ const requestPokemon = async (id) => {
 }
 
 const renderCard = async(data) => {
-    const {name, types, sprites :{ other : { dream_world : {front_default : pokemonImg}} }, weight, height} = data; 
+    const {id, name, types, sprites :{ other : { dream_world : {front_default : pokemonImg}} }, weight, height} = data;
+
+    let nameUpperCase = name[0].toUpperCase() + name.substring(1);
+
     let typesArray= types.map(element => element.type.name);
     
-    pokemonInfoContainer.innerHTML  =`<p>${name}</p>`
+    let typesStorage =``;
+
     typesArray.forEach(typeName => {
-        pokemonInfoContainer.innerHTML += `<p>${typeName}</p>`
-    });
-    pokemonInfoContainer.innerHTML += `<img src="${pokemonImg}" alt="">`
-    pokemonInfoContainer.innerHTML += `<p>Peso: ${weight/10}kg</p>`
-    pokemonInfoContainer.innerHTML += `<p>Altura: ${height/10}cm</p>`
+                        typesStorage += `<div class="type__${typeName}">
+                                            <p>${typeName}</p>
+                                        </div>`
+                        });
+
+    pokemonInfoContainer.innerHTML += `<div class="cardContainer">
+                                        <div class="nameContainer">
+                                            <p class="pokemonName">#${id} ${nameUpperCase}</p>
+                                        </div>
+                                        <div class="imgContainer">
+                                            <img src="${pokemonImg}" alt="${pokemonImg}">
+                                        </div>
+                                        <div class="typesContainer">
+                                        ${typesStorage}
+                                        </div>
+                                        <div class="featuresContainer">
+                                            <div class="weightContainer">
+                                                <p> Peso: ${weight/10}kg</p>                      
+                                            </div>
+                                            <div class="heightContainer">
+                                                <p> Altura: ${height/10}m</p>                      
+                                            </div>
+                                        </div>
+                                        </div>`
+
 }
 
 const clrError = () => {

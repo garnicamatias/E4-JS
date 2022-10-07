@@ -9,11 +9,16 @@
 </head>
 <body>
     <main>
+        <div class="logoContainer">
+            <img src="./img/pokemonLogo.webp" alt="">
+        </div>
         <div class="principalContainer">
             <div class="inputContainer">
                 <h4 class="principalTitle" id="principalTitle"> Ingresá el id del Pokemon: </h4>
                 <div class="inputBtnContainer">
-                    <p class="msgError" id="msgError"></p>
+                    <div class="msgErrorContainer">
+                        <p class="msgError" id="msgError"></p>
+                    </div>
                     <form class="formSubmit">
                         <input type="number" name="pokemonId" id="pokemonId">
                         <button type="submit" id="btnSubmit">Consultar</button>
@@ -22,30 +27,7 @@
             </div>
 
             <div class="pokemonInfoContainer" id="pokemonInfoContainer">
-                <div class="cardContainer">
-                    <div class="nameContainer">
-                        <p class="pokemonName">#25 Pikachu</p>
-                    </div>
-                    <div class="imgContainer">
-                        <img src="" alt="">
-                    </div>
-                    <div class="typesContainer">
-                        <div class="type__electric">
-                            <p>electric</p>
-                        </div>
-                        <div class="type__steel">
-                            <p>electric</p>
-                        </div>
-                    </div>
-                    <div class="featuresContainer">
-                        <div class="weightContainer">
-                            <p> Weight:8000000kg</p>                      
-                        </div>
-                        <div class="heightContainer">
-                            <p> Height:0.4cm</p>                      
-                        </div>
-                    </div>
-                </div>
+                
             </div>
         </div>
     </main>

@@ -13,6 +13,15 @@ body{
     align-items: center;
 }
 
+.logoContainer > img {
+    max-width: 400px;
+}
+
+.principalContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
 
 .principalTitle{
     font-weight: 700;
@@ -26,6 +35,19 @@ body{
 .inputBtnContainer{
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.msgErrorContainer{
+    height: 30px;
+}
+
+.msgError{
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
 }
 
 .formSubmit{
@@ -91,6 +113,14 @@ body{
     background-color: white;
     border-radius: 15px;
     width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgContainer > img {
+    max-height: 250px ;
+    max-width: 290px;
 }
 
 .typesContainer{
@@ -111,6 +141,7 @@ body{
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     -webkit-text-fill-color: white;
     -webkit-text-stroke: 1px black;
+    border: 2px solid black;
 }
 
 .type__electric{
@@ -141,7 +172,49 @@ body{
     background-color: rgb(57, 57, 57);
 }
 
+.type__fire{
+    background-color: rgb(204, 54, 54);
+}
 
+.type__flying{
+    background-color: rgb(106, 213, 242);
+}
+
+.type__water{
+    background-color: rgb(41, 35, 189);
+}
+
+.type__poison{
+    background-color: rgb(147, 79, 193);
+}
+
+.type__ground{
+    background-color: rgb(131, 100, 92);
+}
+
+.type__fairy{
+    background-color: rgb(253, 229, 238);
+}
+
+.type__fighting{
+    background-color: rgb(79, 76, 48);
+}
+
+.type__rock{
+    background-color: rgb(33, 31, 34);
+}
+
+.type__ice{
+    background-color: rgb(80, 145, 140);
+}
+
+.type__dragon{
+    background-color: rgb(204, 154, 28);
+}
+
+.type__dark{
+    background-color: rgb(0, 0, 0);
+}
 
 .featuresContainer{
     display: flex;
@@ -150,7 +223,7 @@ body{
 }
 
 .featuresContainer > div {
-    background-color: rgba(158, 222, 249, 1);
+    background-color: rgb(159, 222, 249);
     border-radius: 15px;
     min-width: 40%;
     font-weight: bold;
@@ -159,4 +232,5 @@ body{
     justify-content: center;
     height: 30px;
     padding: 5px;
+    border: 2px solid rgb(106, 134, 147);
 }
