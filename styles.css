@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif; 
+}
+
+body{
+    background-color: #778BBE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.principalTitle{
+    font-weight: 700;
+    font-size: 30px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 1px black;
+    text-align: center;
+}
+
+.inputBtnContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.formSubmit{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 200px;
+    gap: 10px;
+}
+
+#btnSubmit, #pomemonId{
+    width: 100%;
+}
+
+#pokemonId{
+    max-height: 30px;
+    padding-left: 10px;
+    font-size: 20px;
+    font-weight:bolder;
+}
+
+#btnSubmit{
+    border-radius: 15px;
+    background-color: rgba(220, 20, 60, 1);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 1px black;
+    font-size: 20px;
+    height: 40px;
+    font-weight: 700;
+}
+
+.cardContainer{
+    background-color:rgba(248, 234, 220, 1) ;
+    height: 500px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 4px 6px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 20px;
+}
+
+.nameContainer{
+    width: 80%;
+    background-color: rgba(245, 155, 173, 1);
+    border-radius: 15px;
+    border: 2px solid #000000;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nameContainer > p {
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.imgContainer{
+    height: 300px;
+    background-color: white;
+    border-radius: 15px;
+    width: 80%;
+}
+
+.typesContainer{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 20px;
+}
+
+.typesContainer > div{
+    border-radius: 15px;
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 1px black;
+}
+
+.type__electric{
+    background-color: rgba(235, 173, 14, 1);
+}
+
+.type__grass{
+    background-color: rgb(11, 150, 67);
+}
+
+.type__psychic{
+    background-color: rgb(70, 115, 212);
+}
+
+.type__ghost{
+    background-color: rgb(113, 113, 113);
+}
+
+.type__normal{
+    background-color: burlywood;
+}
+
+.type__bug{
+    background-color: khaki;
+}
+
+.type__steel{
+    background-color: rgb(57, 57, 57);
+}
+
+
+
+.featuresContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.featuresContainer > div {
+    background-color: rgba(158, 222, 249, 1);
+    border-radius: 15px;
+    min-width: 40%;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    padding: 5px;
+}
